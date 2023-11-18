@@ -34,27 +34,65 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
+					<h1>Mi currículum</h1>
 					<img src="images/IMG.jpg" alt="Foto de perfil" class="profile-img">
-				</div>
-				<div class="col-md-8">
-					<h1>Oriol Dueñas Triguero</h1>
-					<p>Operador de Helpdesk en <strong>PSS</strong></p>
 				</div>
 			</div>
 			<div class="section">
-				<h2 class="section-title">Datos de contacto</h2>
+				<h2 class="section-title">Datos personales</h2>
 				<ul>
-					<li><strong>Dirección:</strong><a href="mailto:orioldu@hotmail.com"> orioldu@hotmail.com</a></li>
+					<li><strong>Nombre: </strong>Oriol Dueñas Triguero</li>
+					<li><strong>Puesto actual: </strong>Operador de Helpdesk en <strong>PSS</strong></li>
+					<li><strong>Email: </strong><a href="mailto:orioldu@hotmail.com">orioldu@hotmail.com</a></li>
 				</ul>
-					<details>
-						<summary><strong>Idiomas</strong></summary>
-						<ul>
-							<li>Castellano: Nativo</li>
-							<li>Catalán: Nativo</li>
-							<li>Inglés: Intermedio (B1)</li>
-							</ul>
-					</details>
+			</div>
+
+			<div class="section">
+				<h2 class="section-title">Habilidades</h2>
+				<ul>
+					<li>Proactividad</li>
+					<li>Facilidad de aprendizaje de nuevas tecnologías</li>
+					<li>Responsabilidad</li>
+					<li>Autonomía</li>
+				</ul>
+			</div>
+			
+			<div class="section">
+				<details>
+					<summary><h2 class="section-title">Idiomas</h2></summary>
+					<ul>
+						<li>Castellano: Nativo</li>
+						<li>Catalán: Nativo</li>
+						<li>Inglés: Intermedio (B1)</li>
+					</ul>
+				</details>
+			</div>
+
+			<div class="section">
+				<h2 class="section-title">Referencias</h2>
+				<ul>
+					<li>Referencia 1: Jose Vila, Administrador de Sistemas de TI en IFR GROUP, S.A.U.</li>
+				</ul>
 			</div>
 		</div>
-    </body>
+		<p>Última actualización: <span id="fecha"></span></p>
+
+		<script>
+			// Obtener la fecha actual
+			var fecha = new Date();
+
+			// Obtener el día, mes y año
+			var dia = fecha.getDate();
+			var mes = fecha.toLocaleString('default', { month: 'long' });
+			var año = fecha.getFullYear();
+
+			// Actualizar el texto con la fecha actual
+			document.getElementById('fecha').innerHTML = dia + ' de ' + mes + ' del ' + año;
+
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</body>
 </html>
