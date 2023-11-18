@@ -22,6 +22,9 @@
 					<div class="col-md-6">
 						<p><strong>Edad: </strong><span class="age"></span></p>
 					</div>
+					<div class="col-md-6">
+						<p><strong>Email de contacto: </strong><a href="mailto:orioldu@hotmail.com?subject=Oferta%20Trabajo%20Oriol%20Dueñas%20Triguero" target="_blank">orioldu@hotmail.com</a></p>
+					</div>
 				</div>
 			</section>
 
@@ -43,7 +46,7 @@
 
 			const ageSpan = document.querySelector('.age');
 			ageSpan.textContent = `${edad} años`;
-			
+
 			const fechaFormateada = fecha.toLocaleDateString('es-ES', opcionesFecha);
 			fechaActualizacion.textContent = `Última actualización: ${fechaFormateada}`;
 		</script>
