@@ -4,31 +4,16 @@
 		<title>Mi CV</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<meta charset="UTF-8">
-		<style>
-			body {
-				font-family: Arial, sans-serif;
-				margin: 20px;
-			}
-			h1 {
-				margin-bottom:20px;
-			}
-			.profile-img {
-				width: 150px;
-				height: 150px;
-				border-radius: 50%;
-				object-fit: cover;
-			}
-			.section {
-				margin-bottom: 30px;
-			}
-			.section-title {
-				margin-bottom: 10px;
-			}
-			ul {
-				list-style-type: none;
-				padding-left: 0;
-			}
-		</style>
+		<link rel="stylesheet" href="css/main.css">
+		<script>
+			const detailsElements = document.querySelectorAll('.animated-details');
+
+			detailsElements.forEach(details => {
+				details.addEventListener('click', function(){
+					this.open ? this.removeAttribute('open') : this.setAttribute('open', 'open');
+				});
+			});
+		</script>
     </head>
     <body>
 		<div class="container">
@@ -58,8 +43,8 @@
 			</div>
 			
 			<div class="section">
-				<details>
-					<summary><h2 class="section-title">Idiomas</h2></summary>
+				<details class="animated-details">
+					<summary>Idiomas</summary>
 					<ul>
 						<li>Castellano: Nativo</li>
 						<li>Catalán: Nativo</li>
@@ -69,8 +54,8 @@
 			</div>
 
 			<div class="section">
-				<details>
-					<summary><h2 class="section-title">Referencias</h2></summary>
+				<details class="animated-details">
+					<summary><strong>Referencias</strong></summary>
 					<ul>
 						<li>Referencia 1: Jose Vila, Administrador de Sistemas de TI en IFR GROUP, S.A.U.</li>
 					</ul>
@@ -79,11 +64,11 @@
 
 			<div class="section">
 				<h2 class="section-title">Informática</h2>
-				<details>
-					<summary><p><strong>Sistemas:</strong></p></summary>
+				<details class="animated-details">
+					<summary><strong>Sistemas:</strong></summary>
 					<ul>
 						<li>Windows Server</li>
-						<details>
+						<details class="animated-details">
 							<summary><strong>Servicios usados:</strong></summary>
 							<ul>
 								<li>Active Directory</li>
@@ -97,7 +82,7 @@
 							</ul>
 						</details>
 						<li>
-							<details>
+							<details class="animated-details">
 								<summary><strong>Windows Client</strong></summary>
 								<ul>
 									<li>10</li>
@@ -106,7 +91,7 @@
 							</details>
 						</li>
 						<li>
-							<details>
+							<details class="animated-details">
 								<summary><strong>Ubuntu Server</strong></summary>
 								
 							</details>
