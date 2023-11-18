@@ -19,18 +19,31 @@
 					<div class="col-md-6">
 						<p><strong>Nombre: </strong>Oriol Dueñas Triguero</p>
 					</div>
+					<div class="col-md-6">
+						<p><strong>Edad: </strong><span class="age"></span></p>
+					</div>
 				</div>
 			</section>
 
 
 
-			<p id="fecha">Última actualización: xx de xx del xxxx</p>
+			<p id="fecha"><strong>Última actualización: </strong>xx de xx del xxxx</p>
 		</div>
 		<script>
 			// Fecha de actualización
 			const fechaActualizacion = document.getElementById('fecha');
 			const fecha = new Date();
+			const fechaNacimiento = new Date(2002, 2, 25);
 			const opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
+			const edad = fecha.getFullYear() - fechaNacimiento.getFullYear();
+
+			if (fecha.getMonth() < fechaNacimiento.getMonth() || (fecha.getMonth == fechaNacimiento.getMonth() && fecha.getDate() < fechaNacimiento.getDate())) {
+				edad--;
+			}
+
+			const ageSpan = document.querySelector('.age');
+			ageSpan.textContent = `${edad} años`;
+			
 			const fechaFormateada = fecha.toLocaleDateString('es-ES', opcionesFecha);
 			fechaActualizacion.textContent = `Última actualización: ${fechaFormateada}`;
 		</script>
