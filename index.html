@@ -69,13 +69,54 @@
 			</div>
 
 			<div class="section">
-				<h2 class="section-title">Referencias</h2>
-				<ul>
-					<li>Referencia 1: Jose Vila, Administrador de Sistemas de TI en IFR GROUP, S.A.U.</li>
-				</ul>
+				<details>
+					<summary><h2 class="section-title">Referencias</h2></summary>
+					<ul>
+						<li>Referencia 1: Jose Vila, Administrador de Sistemas de TI en IFR GROUP, S.A.U.</li>
+					</ul>
+				</details>
 			</div>
-		</div>
-		<p>Última actualización: <span id="fecha"></span></p>
+
+			<div class="section">
+				<h2 class="section-title">Informática</h2>
+				<details>
+					<summary><p><strong>Sistemas:</strong></p></summary>
+					<ul>
+						<li>Windows Server</li>
+						<details>
+							<summary><strong>Servicios usados:</strong></summary>
+							<ul>
+								<li>Active Directory</li>
+								<li>Internet Information Services (HTTP / FTP)</li>
+								<li>Remote Desktop Services (RDP)</li>
+								<li>Domain Name Services (DNS)</li>
+								<li>Print Services (Servidor de impresión)</li>
+								<li>Dynamic Host Configuration Protocol (DHCP)</li>
+								<li>Backup Server</li>
+								<li>Remote Routing and ACcess Service (RRAS)</li>
+							</ul>
+						</details>
+						<li>
+							<details>
+								<summary><strong>Windows Client</strong></summary>
+								<ul>
+									<li>10</li>
+									<li>11</li>
+								</ul>
+							</details>
+						</li>
+						<li>
+							<details>
+								<summary><strong>Ubuntu Server</strong></summary>
+								
+							</details>
+						</li>
+						<li>Zentyal Server</li>
+						<li></li>
+					</ul>
+				</details>
+			</div>
+			<p>Última actualización: <span id="fecha"></span></p>
 
 		<script>
 			// Obtener la fecha actual
@@ -90,6 +131,8 @@
 			document.getElementById('fecha').innerHTML = dia + ' de ' + mes + ' del ' + año;
 
 		</script>
+		</div>
+		
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
