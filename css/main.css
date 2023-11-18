@@ -21,12 +21,3 @@ ul {
     list-style-type: none;
     padding-left: 0;
 }
-.animated-details {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease;
-}
-
-.animated-details[open] {
-    max-height: 500px; /* Altura máxima al desplegarse */
-}
