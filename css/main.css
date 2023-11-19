@@ -1,6 +1,9 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: darkslategray;
+    color: white;
 }
 h1 {
     margin-bottom:20px;
@@ -24,8 +27,11 @@ a {
 a:hover {
 	color: #0056b3; /* Color del texto al pasar el cursor por encima */
 }
+a:visited {
+    color: purple;
+}
 .profile-img {
 	width: 150px;
 	height: 150px;
-
+    margin-bottom: 20px;
 }
