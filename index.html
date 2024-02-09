@@ -11,6 +11,17 @@
     		color: white;
 		}
 	</style>
+	<script>
+		var fechaNacimiento = new Date(2002, 2, 25);
+		var fechaActual = new Date();
+
+		var day = fechaActual.getDate();
+		var month = fechaActual.getMonth();
+		var year = fechaActual.getFullYear();
+		
+		document.getElementById("day").textContent = day
+		document.getElementById("year").textContent = year
+	</script>
 </head>
 <body>
 	<div class="container">
@@ -102,27 +113,7 @@
         <a class="btn btn-primary" href="education.html"><strong>Formación</strong></a>
         <p><strong>Última actualización</strong>: <span id="day"></span> de <span id="month"></span> del <span id="year"></span></p>
 	</div>
-	
-	<script>
-		var fechaNacimiento = new Date(2002, 2, 25);
-		var fechaActual = new Date();
 
-		var edad = fechaActual.getFullYear() - fechaNacimiento.getFullYear();
-		if (fechaActual.getMonth() < fechaNacimiento.getMonth() || (fechaActual.getMonth() == fechaNacimiento.getMonth() && fechaActual.getDate() < fechaNacimiento.getDate())) {
-			edad--;
-		}
-
-		var day = fechaActual.getDate();
-		var month = fechaActual.toLocaleString('es-ES', { month: 'long' });
-		var year = fechaActual.getFullYear();
-
-		const ageSpan = document.querySelector('.age');
-		agespan.textContent = `${edad} años`;
-		
-		document.getElementById("day").textContent = day;
-		document.getElementById("month").textContent = month;
-		document.getElementById("year").textContent = year;
-	</script>
 
 </body>
 </html>
