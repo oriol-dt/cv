@@ -11,17 +11,6 @@
     		color: white;
 		}
 	</style>
-	<script>
-		var fechaNacimiento = new Date(2002, 2, 25);
-		var fechaActual = new Date();
-
-		var day = fechaActual.getDate();
-		var month = fechaActual.getMonth();
-		var year = fechaActual.getFullYear();
-		
-		document.getElementById("day").textContent = day
-		document.getElementById("year").textContent = year
-	</script>
 </head>
 <body>
 	<div class="container">
@@ -35,7 +24,7 @@
                     <h4>Información personal</h4>
                     <br/>
                     <p><strong>Nombre</strong>: Oriol Dueñas Triguero</p>
-                    <p><strong>Edad</strong>: <span class="age"></span></p>
+                    <p><strong>Edad</strong>: <span id="edad"></span></p>
                     <p><strong>Información de contacto</strong>: <a href="mailto:orioldu@hotmail.com?subject=Oferta%20Trabajo%20Oriol%20Dueñas%20Triguero" target="_blank"><span>Correo electrónico</span></a></p>
                     <p><strong>Ubicación</strong>: España</p>
                     <hr>
@@ -112,8 +101,7 @@
         <a class="btn btn-primary" href="experience.html"><strong>Experiencia laboral</strong></strongExperiencia></a>
         <a class="btn btn-primary" href="education.html"><strong>Formación</strong></a>
         <p><strong>Última actualización</strong>: <span id="day"></span> de <span id="month"></span> del <span id="year"></span></p>
+        <script src="js/main-script.js"></script>
 	</div>
-
-
 </body>
 </html>
