@@ -1,4 +1,4 @@
-const fechaNacimiento = new Date();
+const fechaNacimiento = new Date(2002, 2, 25);
 var fechaActual = new Date();
 
 var day = fechaActual.getDate();
