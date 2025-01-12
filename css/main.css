@@ -7,6 +7,7 @@
 h1 {
     margin-bottom:20px;
 }
+
 .section {
     margin-bottom: 30px;
 }
@@ -17,6 +18,7 @@ ul {
     list-style-type: none;
     padding-left: 0;
 }
+
 a {
 	text-decoration: none; /* Elimina el subrayado predeterminado */
 	color: #007bff; /* Color del texto para enlaces */
